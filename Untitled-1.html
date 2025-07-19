@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetthttps://i.postimg.cc/J0GWCjP8/Gambar-Whats-App-2025-07-19-pukul-21-54-40-5bb9b453.jpgi@1.5.1/dist/confetti.browser.min.js"
+       ></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Datang afifah ku yang cantik di surat cinta</h1>
+        <p>ayo sayang di skrol maaf ya terlambat banget.</p>
+        <img src="Gambar WhatsApp 2025-07-19 pukul 23.03.18_08a506b0.jpg" 
+          style="border-radius: 10px; width: 100% ; height: 100% ; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"
+          width= 100% ;
+          height= 100% ;
+        alt="Romantic Image" class="romantic-image">
+        <button onclick="launchConfetti()">Rayakan cinta !</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulang Tahun Spesial untuk Pacarku +sehari</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin: 30px auto;
+            text-align: center;
+            transition: all 0.5s ease;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            color: #ff6b6b;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff6b6b, 0 0 40px #ff6b6b;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff9a8b, 0 0 40px #ff9a8b, 0 0 50px #ff9a8b;
+            }
+        }
+
+        .photo-frame {
+            width: 250px;
+            height: 250px;
+            margin: 20px auto;
+            border: 10px solid #fff;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-frame:hover {
+            transform: scale(1.05);
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .message {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 20px 0;
+            padding: 20px;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .heart {
+            font-size: 1.5rem;
+            color: #ff6b6b;
+            animation: heartbeat 1.5s infinite;
+            display: inline-block;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 20px;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+
+        .btn span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #ff8e8e, #ff6b6b);
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        .btn:hover::after {
+            opacity: 1;
+        }
+
+        .memory-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .memory-item {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .memory-item:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .memory-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .confetti-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .container {
+                width: 95%;
+                padding: 20px;
+            }
+            .photo-frame {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="confetti-container" id="confetti"></div>
+    
+    <div class="container" id="main-screen">
+        <h1>Selamat Ulang Tahun, Sayangku!</h1>
+        
+        <div class="photo-frame">
+            <img src="Gambar WhatsApp 2025-07-19 pukul 21.54.40_5bb9b453.jpg"
+             alt="Foto kita berdua" id="couple-photo">
+        </div>
+        
+        <p class="message">
+            Di hari spesialmu ini, aku ingin mengucapkan terima kasih telah menjadi bagian terindah dalam hidupku. 
+            Setiap detik bersamamu adalah anugerah yang tak ternilai. 
+            <span class="heart">❤️</span>
+        </p>
+        
+        <button class="btn" id="open-letter">Buka Surat Cinta</button>
+        <button class="btn" id="show-memories">Lihat Kenangan Indah</button>
+    </div>
+    
+    <div class="container hidden" id="letter-screen">
+        <h1>Surat Cinta Untukmu</h1>
+        
+        <div class="photo-frame">
+            <img src="Gambar WhatsApp 2025-07-19 pukul 22.50.59_0aed2854.jpg" alt="Foto pacarku dan aku">
+        </div>
+        
+        <div class="message">
+            <p>Sayangku afifah tersayang,</p>
+            <p>Di hari ulang tahunmu ini, aku minta maaf klau ini terlambat, aku ingin mengungkapkan betapa beruntungnya aku memilikimu dalam hidupku. Kamu adalah sinar matahari yang menyinari hari-hariku, pelangi setelah hujan, dan bintang yang selalu bersinar terang di kegelapan.</p>
+            <p>Aku berjanji akan terus menyayangimu, merawatmu, dan membuatmu bahagia setiap hari. Setiap tahun bersamamu adalah anugerah terindah yang pernah aku terima.</p>
+            <p>Selamat ulang tahun sayang, semoga tahun ini membawa kebahagiaan, kesuksesan, dan segala kebaikan untukmu. Aku mencintaimu lebih dari apapun.</p>
+            <p class="heart">❤️ Selamanya, kekasihmu ❤️</p>
+        </div>
+        
+        <button class="btn" id="back-to-main">Kembali ke Menu</button>
+    </div>
+    
+    <div class="container hidden" id="memories-screen">
+        <h1>Kenangan Indah Kita</h1>
+        
+        <div class="memory-box">
+            <div class="memory-item">
+                <img src="Gambar WhatsApp 2025-07-19 pukul 21.54.43_be099e9b.jpg" alt="Momen pertama kita">
+            </div>
+            <div class="memory-item">
+                <img src="Gambar WhatsApp 2025-07-19 pukul 21.54.43_9a74c0a6.jpg" alt="Liburan bersama">
+            </div>
+            <div class="memory-item">
+                <img src="Gambar WhatsApp 2025-07-19 pukul 21.54.43_3732718e.jpg" alt="Tanggal spesial">
+            </div>
+            <div class="memory-item">
+                <img src="Gambar WhatsApp 2025-07-19 pukul 21.54.42_b0c9db07.jpg" alt="Momen romantis">
+            </div>
+            <div class="memory-item">
+                <img src="Gambar WhatsApp 2025-07-19 pukul 21.54.42_574add45.jpg" alt="Foto bersama">
+            </div>
+            <div class="memory-item">
+                <img src="Gambar WhatsApp 2025-07-19 pukul 21.54.41_7db4c169.jpg" alt="Petualangan kita">
+            </div>
+            <div class="memory-item">
+                <img src="Gambar WhatsApp 2025-07-19 pukul 22.51.00_98900071.jpg" alt="Petualangan kita">
+            </div>
+            <div class="memory-item">
+                <img src="Gambar WhatsApp 2025-07-19 pukul 22.51.00_030bf49b.jpg" alt="Petualangan kita">
+            </div>
+            <div class="memory-item">
+                <img src="Gambar WhatsApp 2025-07-19 pukul 22.50.59_0aed2854.jpg" alt="Petualangan kita">
+            </div>
+            <div class="memory-item">
+                <img src="Gambar WhatsApp 2025-07-19 pukul 22.55.51_c4217424.jpg" alt="Petualangan kita">
+            </div>
+        </div>
+        
+        <button class="btn" id="back-to-main-2">Kembali ke Menu</button>
+    </div>
+    
+    <footer>
+        Dibuat dengan <span class="heart">❤️</span> untuk pacar tersayang
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elemen UI
+            const mainScreen = document.getElementById('main-screen');
+            const letterScreen = document.getElementById('letter-screen');
+            const memoriesScreen = document.getElementById('memories-screen');
+            const openLetterBtn = document.getElementById('open-letter');
+            const showMemoriesBtn = document.getElementById('show-memories');
+            const backToMainBtn = document.getElementById('back-to-main');
+            const backToMainBtn2 = document.getElementById('back-to-main-2');
+            const couplePhoto = document.getElementById('couple-photo');
+            const confettiContainer = document.getElementById('confetti');
+            
+            // Atur foto utama (ganti dengan URL foto kalian)
+            couplePhoto.src = 'Gambar WhatsApp 2025-07-19 pukul 21.54.40_5bb9b453.jpg';
+            couplePhoto.alt = 'Gambar WhatsApp 2025-07-19 pukul 21.54.40_5bb9b453.jpg';
+            
+            // Fungsi untuk membuat hati terbang
+            function createFlyingHeart() {
+                const heart = document.createElement('div');
+                heart.className = 'flying-heart';
+                heart.innerText = '❤️';
+                document.body.appendChild(heart);
+        
+            // Animasi hati
+            setTimeout(() => {
+                heart.remove(); //tetap ada hati setelah animasi selesai
+            }, 10000); // Durasi animasi sama dengan durasi di CSS
+        }
+            // Buat hati terbang menyebar setiap 1 detik
+    setInterval(createFlyingHeart, 10000);
+
+            // Event listeners
+            openLetterBtn.addEventListener('click', function() {
+                mainScreen.classList.add('hidden');
+                letterScreen.classList.remove('hidden');
+                triggerConfetti();
+            });
+            
+            showMemoriesBtn.addEventListener('click', function() {
+                mainScreen.classList.add('hidden');
+                memoriesScreen.classList.remove('hidden');
+                triggerConfetti();
+            });
+            
+            backToMainBtn.addEventListener('click', function() {
+                letterScreen.classList.add('hidden');
+                mainScreen.classList.remove('hidden');
+            });
+            
+            backToMainBtn2.addEventListener('click', function() {
+                memoriesScreen.classList.add('hidden');
+                mainScreen.classList.remove('hidden');
+            });
+            
+            // Fungsi confetti
+            function triggerConfetti() {
+                confetti({
+                    particleCount: 150,
+                    spread: 70,
+                    origin: { y: 0.6 },
+                    colors: ['#ff6b6b', '#ff8e8e', '#ffb8b8', '#ffffff']
+                });
+            }
+            
+            // Trigger confetti saat pertama kali dibuka
+            setTimeout(triggerConfetti, 1000);
+        });
+        // mainkan musik latar belakang
+        const bgMusic = document.getElementById('bgMusic');
+        bgMusic.volume = 0.5; // Atur volume musik
+        bgMusic.loop = true; // Musik akan berulang
+        bgMusic.play().catch(playSound => {
+            console.audio('https://media1.vocaroo.com/mp3/1bF9OgsxfL5y:', playSound);
+        });
+    </script>
+</body>
+</html>
